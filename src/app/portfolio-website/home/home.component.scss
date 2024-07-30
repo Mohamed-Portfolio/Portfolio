@@ -1,7 +1,7 @@
 .home-container {
     text-align: center;
     padding: 50px;
-    background-color: #c1ecff;
+    background-color: white;
     font-family: "Lobster", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -38,6 +38,11 @@
     color: #333;
 }
 
+.text-container h4 {
+    font-size: 1.5em;
+    color: #666;
+}
+
 .text-container p {
     font-size: 1.2em;
     color: #555;
@@ -45,7 +50,7 @@
 
 .profile-image {
     width: 300px;
-    height: 300px;
+    height: 400px;
     object-fit: cover;
 }
 
@@ -53,45 +58,74 @@
     margin-top: 50px;
 }
 
+.skills-section p {
+    font-size: 25px;
+    color: #080722;
+    margin-bottom: 20px;
+}
+
 .card-container {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px;
+    justify-content: center;
     margin-top: 30px;
-    font-family: "lobster",sans-serif;
+    font-family: "Lobster", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
-.example-card {
-   max-width: 300px;
-   transition: transform 0.6s ease;
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
 }
 
-.example-card:hover {
-    transform:scale(1.05);
+.card:hover {
+    transform: scale(1.05);
     cursor: pointer;
 }
 
-.example-card-header {
-    padding: 10px;
-    background-color: #f9f9f9;
-    border-bottom: 1px solid #ddd;
+.card img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 10px;
 }
 
-.example-card img {
-    background-size: cover;
+.card-content {
+    padding: 10px;
+}
+
+.card-content p:first-child {
+    font-size: 1.2em;
+    color: #080722;
+    margin-bottom: 5px;
+}
+
+.card-content p:last-child {
+    font-size: 0.9em;
+    color: #555;
 }
 
 button {
-    background-color: #6b08a6;
+    background-color: #1e1c34;
     color: white;
     border: none;
     padding: 10px 15px;
-    margin: 10px 0;
+    margin-top: 10px;
     cursor: pointer;
     border-radius: 4px;
+    font-size: 0.9em;
 }
 
 button:hover {
-    background-color: #4e057a;
+    background-color: #4e4471;
 }

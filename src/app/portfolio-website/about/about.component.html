@@ -1,33 +1,50 @@
 <app-navbar></app-navbar>
+
 <div class="about-me">
   <div class="content-wrapper">
-    <div class="education-section" *ngIf="showEducation">
-      <div id="skills-section" class="skills-section animate-fadeInup">
-        <p style="font-size: 25px; color: #6b02a6">Education</p>
+    
+    <div class="about-me-section" *ngIf="showAbout_Me">
+      <div id="about-me-section" class="section animate-fadeInup">
+        <p id="do" class="section-title">About Me</p>
+        <p id="do1">
+      I am a dedicated and versatile Full Stack Developer with a passion for creating efficient and user-friendly web applications.       
+      I have worked with a variety of technologies, including React, Next.js, MySQL, and MongoDB. My journey in web development began with a deep curiosity about how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.
+        </p>
       </div>
-
-<p>University Name</p>
-<p>Degree</p>
-<p>Graduation day</p>
-
-
     </div>
+
+    <div class="education-section" *ngIf="showEducation">
+      <div id="education-section" class="section animate-fadeInup">
+        <p id="do" class="section-title">Education</p>
+        <p>Higher Institute of Applied Sciences and Technology Mateur</p>
+        <strong>2014-2018</strong>
+        <p> Baccalaureate in Mathematical Sciences,Main Session Mohamed</p>
+        <strong>2014-2013</strong>
+      </div>
+    </div>
+
+    <div class="education-section" *ngIf="showEducation">
+      <div id="education-section" class="section animate-fadeInup">
+        <p id="do" class="section-title">Certfication</p>
+        <p>University Name : ReBootKamp</p>
+        <strong>2023-2024</strong>
+      </div>
+    </div>
+
+  
 
     <div class="projects-section" *ngIf="showProjects">
-      <div id="skills-section" class="skills-section animate-fadeInup">
-        <p style="font-size: 25px; color: #6b02a6">Projects</p>
+      <div id="projects-section" class="section animate-fadeInup">
+        <p id="do" class="section-title">Projects</p>
+        <div class="project-card" *ngFor="let project of projects">
+          <h4 style="font-size: 0.5cm;">{{project.name}}</h4>
+          <p>{{project.description}}</p>
+          <button (click)="openSite(project.Site)">GitHub.com</button>
+        </div>
       </div>
-
-<div class="project-card" *ngFor="let project of projects">
-    
-<h4>{{project.name}}</h4>
-<p>
-    {{project.description}}
-</p>
-</div>
-
     </div>
+    
   </div>
-
-  <app-footer></app-footer>
 </div>
+
+<app-footer></app-footer>

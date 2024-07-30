@@ -15,7 +15,12 @@
     gap: 20px;
   }
   
-  /* Education Section and Projects Section */
+  #do {
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 0.8cm;
+  }
+
   .education-section, .projects-section {
     background-color: #fff;
     border: 1px solid #ddd;
@@ -27,10 +32,14 @@
   .skills-section {
     margin-bottom: 20px;
   }
-  
+  #do1{
+    font-size: 1.4em;
+    color: #333;
+  }
+
   .skills-section p {
     font-size: 25px;
-    color: #6b02a6;
+    color: #0b080c;
     margin: 0;
     padding-bottom: 10px;
     border-bottom: 2px solid #6b02a6;
@@ -60,4 +69,36 @@
   .project-card p {
     margin: 0;
     color: #555;
+  }
+
+  button {
+    align-items: center;
+    background-color: transparent;
+    color: black;
+    cursor: pointer;
+    display: flex;
+    font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5;
+    text-decoration: none;
+    text-transform: uppercase;
+    outline: 0;
+    border: 0;
+    padding: 1rem;
+  }
+  
+  button:before {
+    background-color: #0f0e0e33;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    margin-right: 10px;
+    transition: all .42s cubic-bezier(.25,.8,.25,1);
+    width: 0;
+  }
+  
+  button:hover:before {
+    background-color: gray;
+    width: 3rem;
   }

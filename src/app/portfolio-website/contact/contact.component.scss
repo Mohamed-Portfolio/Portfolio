@@ -35,8 +35,7 @@
     display: block;
     width: 100%;
     padding: 10px;
-    background-color: #6b02a6;
-    color: #fff;
+    background-color: #747272;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -44,7 +43,7 @@
   }
   
   button:disabled {
-    background-color: #ddd;
+    background-color: #141212;
     cursor: not-allowed;
   }
   
